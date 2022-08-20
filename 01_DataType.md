@@ -110,7 +110,8 @@ HelloWord()
 #### 오류
     x는 지역변수 이기 때문에 함수 내부에서 호출이 불가능 한 것을 볼 수 있다.
     전역변수는 잘 된다.
-![img.png](img.png)
+![img](https://user-images.githubusercontent.com/22822369/185753382-d5c982e2-d876-429e-a1a9-213ace4be914.png)
+
 
 #### 주의점
     전역변수는 메모리를 항상 차지하고 삭제되지 않기 때문에 남발하면 안된다.
