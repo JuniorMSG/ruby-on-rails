@@ -8,36 +8,40 @@
 ### Reference
 [뒤로](../README.md) / [위로](#컨탠츠-제목)
 
-## 1. 데이터 타입 
+## 데이터 타입 
     원시 자료형이 사실상 존재하지 않고 모든 것이 객체인 언어
     여러 종류의 데이터를 식별하는 분류
 
 ### 숫자
     2
 ```ruby
-    num = 2
-    puts('숫자형', num)
+num = 2
+puts('숫자형', num)
 ```
 
 ### 문자열
     'Hello World'
 ```ruby
-    str = 'String'
-    puts('문자형', str)
+str = 'String'
+puts('문자형', str)
 ```
 
 ### nil
-    null 이랑 같은 값
+    null 이랑 같은 값?
+    'Null'과 'nil'은 동의어이며 둘 다 값에서 '0' 또는 '무'를 의미합니다. 두 단어는 주로 사용하는 분야에 따라 다릅니다. 
+    우리는 주로 수학, 프로그래밍, 비즈니스 및 법률 문제에서 'null'을 사용합니다. 
+    반면에 우리는 스포츠와 게임에서 'nil'을 사용합니다.
+
 ```ruby
-    xNil = nil
-    puts('null => nil', xNil)
+xNil = nil
+puts('null => nil', xNil)
 ```
 ### Boolean
     Boolean이라고 부르긴 하나? 애매하군!
     true / false
 ```ruby
-    boolean = true
-    puts('boolean true/false', boolean)
+boolean = true
+puts('boolean true/false', boolean)
 ```
 ### 배열 (Array)
     인덱스와 번호에 대응하는 데이터들로 이루어진 자료 구조
@@ -47,8 +51,8 @@
     js = []
     Java = List<Type> or ArrayList<Type>
 ```ruby
-    people = ['Alice', 123, 3.14, nil, false, true]
-    puts("puts(people[0]) : ", people[0])
+people = ['Alice', 123, 3.14, nil, false, true]
+puts("puts(people[0]) : ", people[0])
 ```
 
 
@@ -59,23 +63,23 @@
     ruby => Hash?
     
 ```ruby
-    colors = {'red' => 'ff0000', 'green' => '00ff00'}
-    puts("colors('red') : ", colors['red'])
+colors = {'red' => 'ff0000', 'green' => '00ff00'}
+puts("colors('red') : ", colors['red'])
 ```
 
+### Reference
+[Null vs Nil](https://grammarhow.com/null-vs-nil/)
 
-## 변수
-    변하는 값
-    x = 2 
-    str = '문자여어얼' 
-    변수는 스코프가 중요함
+
+## 변수와 상수
+    루비는 타입을 선언하지 않는다. 
+    변수는 변하는 값
+    상수는 변하지 않는 값임
     
-    전역변수는 전체 지역에서 
-```ruby
-    x = 2
+    변수는 스코프가 중요한데
+    스코프에 따라서 지역변수, 전역변수, 인스턴스 변수, 클래스 변수 등으로 불린다.
 
-    puts('boolean true/false', boolean)
-```
+
 ### 지역변수
     지역변수는 해당 지역에서만 참조 가능함 
     함수 내부면 함수 내부에서만
@@ -133,6 +137,3 @@ class Clock
 end
 ```
 
-### 상수
-    변하지 않는 값
-    컨벤션이 보통 변수 선언을 대문자로 구성하는 경우가 많다.
