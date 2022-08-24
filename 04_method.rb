@@ -1,4 +1,6 @@
 ## method
+
+puts "method is function"
 def calc_plus(x, y)
   sum = x + y
   return sum
