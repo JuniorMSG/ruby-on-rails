@@ -30,4 +30,4 @@ puts calc_plus(5, 7)
 puts is_even?(5)
 puts is_even?(4)
 ```
-![img.png](img.png)
+![img](https://user-images.githubusercontent.com/22822369/186435726-b893d4ea-a9c2-4812-a6f1-5a4b3d9769ea.png)
