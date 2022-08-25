@@ -1,4 +1,4 @@
-# 페이지 호출하기
+# 기본 페이지 호출하기
     HTML / CSS / JavaScript
     Model / Controller / View 
     
