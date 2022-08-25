@@ -73,6 +73,10 @@
 ![image](https://user-images.githubusercontent.com/22822369/186462068-a5a92c19-cf94-4c61-b985-c170eb88ab3e.png)  
 ![image](https://user-images.githubusercontent.com/22822369/186462628-236e12c8-dece-462d-99dc-9651cbb1e4a8.png)
 
+### 기동
+    rails -s
+    rails server
+
 ### 실행완료
 ![image](https://user-images.githubusercontent.com/22822369/186692504-a27baba5-8795-46eb-8b5c-acecb8041b47.png)
 ![image](https://user-images.githubusercontent.com/22822369/186692679-1f045a90-dcd2-44fe-b409-be8a9e7a46ab.png)
