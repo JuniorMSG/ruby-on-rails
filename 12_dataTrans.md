@@ -18,6 +18,9 @@
 ### Method
     Get : URL에 데이터가 노출된다. 보안에 취약
     Post : URL에 데이터가 노출되지 않는다.  
+    PUT : : 데이터 수정 (Update)
+    Delete: 데이터 삭제 (DELETE)
+출처: https://memostack.tistory.com/180 [MemoStack:티스토리]
 ![image](https://user-images.githubusercontent.com/22822369/186718090-2f264dbe-17ff-45ef-bd1b-7700908cf869.png)
 
 
