@@ -4,7 +4,7 @@
     
 ## 기본적인 페이지 구성 
     3가지가 중요하다. 
-    routes.rb
+    
     Controller
     View 
 
