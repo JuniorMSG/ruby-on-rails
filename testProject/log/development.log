@@ -162,3 +162,60 @@ Processing by HomeController#calc as HTML
 Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1805)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-04 23:52:55 +0900
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.erb within layouts/application
+  Rendered home/index.erb within layouts/application (Duration: 10.8ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 333.4ms | Allocations: 23321)
+Completed 200 OK in 421ms (Views: 363.5ms | ActiveRecord: 0.0ms | Allocations: 26557)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-04 23:53:01 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 4.7ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 1456)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1789)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-04 23:53:22 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.5ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1783)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-04 23:55:12 +0900
+Started GET "/result?num1=&num2=" for 127.0.0.1 at 2022-09-04 23:55:14 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.5ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1833)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 2634)
+
+
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"", "num2"=>""}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.4ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1675)
+Completed 200 OK in 12ms (Views: 9.5ms | Allocations: 2372)
+
+
+Started GET "/result?num1=5&num2=5" for 127.0.0.1 at 2022-09-04 23:55:16 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1246)
+Completed 200 OK in 6ms (Views: 4.5ms | Allocations: 1533)
+
+

@@ -3,8 +3,16 @@ Rails.application.routes.draw do
   # root 'home#index'
   get '/' => 'home#index'
   get '/home' => 'home#hi'
+
+  get '/calc' => 'home#calc'
+
   get '/calc' => 'home#calc'
   get 'result' => 'home#result'
+  post 'result' => 'home#result'
+
+
+  # 4. URL로 request 메시지에 담아서 보내는 방법
+  get 'plus/:num1/:num2' => 'home#plus'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
