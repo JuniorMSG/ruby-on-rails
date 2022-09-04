@@ -7,4 +7,8 @@ class HomeController < ApplicationController
     @message = "돔황챠~"
     @showMessage = "사랑해~"
   end
+
+  def result
+
+  end
 end
