@@ -219,3 +219,377 @@ Processing by HomeController#result as HTML
 Completed 200 OK in 6ms (Views: 4.5ms | Allocations: 1533)
 
 
+Started GET "/result?num1=5&num2=5" for 127.0.0.1 at 2022-09-04 23:59:47 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.4ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1771)
+Completed 200 OK in 14ms (Views: 11.1ms | Allocations: 2725)
+
+
+Started GET "/result?num1=5&num2=5" for 127.0.0.1 at 2022-09-05 00:00:15 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.5ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1746)
+Completed 200 OK in 15ms (Views: 11.9ms | Allocations: 2565)
+
+
+Started GET "/result?num1=5&num2=5" for 127.0.0.1 at 2022-09-05 00:00:32 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5"}
+Completed 500 Internal Server Error in 3ms (Allocations: 3114)
+
+
+  
+NoMethodError (undefined method `put' for #<HomeController:0x00000000018ce0>
+
+    put params
+    ^^^
+Did you mean?  puts
+               putc):
+  
+app/controllers/home_controller.rb:12:in `result'
+Started GET "/result?num1=5&num2=5" for 127.0.0.1 at 2022-09-05 00:00:42 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5"}
+Completed 500 Internal Server Error in 2ms (Allocations: 508)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/home_controller.rb:12:in `result'
+Started GET "/result?num1=5&num2=5" for 127.0.0.1 at 2022-09-05 00:01:41 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"5", "num2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1492)
+Completed 200 OK in 6ms (Views: 4.8ms | Allocations: 2124)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-05 00:01:51 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.8ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1346)
+Completed 200 OK in 7ms (Views: 5.3ms | Allocations: 1634)
+
+
+Started GET "/result?num1=50&num2=5" for 127.0.0.1 at 2022-09-05 00:02:01 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"50", "num2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1238)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 1517)
+
+
+Started GET "/result?num1=50&num2=5" for 127.0.0.1 at 2022-09-05 00:03:59 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"50", "num2"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1758)
+Completed 200 OK in 17ms (Views: 14.6ms | Allocations: 2557)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-05 00:04:02 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.4ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1340)
+Completed 200 OK in 6ms (Views: 4.8ms | Allocations: 1629)
+
+
+Started POST "/result" for 127.0.0.1 at 2022-09-05 00:04:08 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/result"):
+  
+Started GET "/result" for 127.0.0.1 at 2022-09-05 00:07:48 +0900
+Processing by HomeController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1496)
+Completed 200 OK in 7ms (Views: 5.0ms | Allocations: 2131)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-05 00:07:54 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1259)
+Completed 200 OK in 6ms (Views: 4.5ms | Allocations: 1547)
+
+
+Started POST "/result" for 127.0.0.1 at 2022-09-05 00:07:56 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"45445", "num2"=>"4545"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (Allocations: 527)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/result" for 127.0.0.1 at 2022-09-05 00:10:02 +0900
+Processing by HomeController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.0ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1507)
+Completed 200 OK in 6ms (Views: 4.7ms | Allocations: 2157)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-05 00:10:12 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.0ms | Allocations: 28)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1501)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 2113)
+
+
+Started POST "/result" for 127.0.0.1 at 2022-09-05 00:10:16 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"235", "num2"=>"235235"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (Allocations: 486)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/result" for 127.0.0.1 at 2022-09-05 00:14:51 +0900
+Processing by HomeController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1495)
+Completed 200 OK in 7ms (Views: 4.7ms | Allocations: 2145)
+
+
+Started GET "/result" for 127.0.0.1 at 2022-09-05 00:17:13 +0900
+Processing by HomeController#result as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1780)
+Completed 200 OK in 14ms (Views: 10.8ms | Allocations: 2748)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-09-05 00:17:17 +0900
+Processing by HomeController#calc as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/calc.erb within layouts/application
+  Rendered home/calc.erb within layouts/application (Duration: 0.4ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1357)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 1630)
+
+
+Started POST "/result" for 127.0.0.1 at 2022-09-05 00:17:20 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"num1"=>"50", "num2"=>"50"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/result.erb within layouts/application
+  Rendered home/result.erb within layouts/application (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1244)
+Completed 200 OK in 6ms (Views: 4.5ms | Allocations: 1508)
+
+
+Started GET "/plus/3/1" for 127.0.0.1 at 2022-09-05 00:23:09 +0900
+Processing by HomeController#plus as HTML
+  Parameters: {"num1"=>"3", "num2"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/plus.erb within layouts/application
+  Rendered home/plus.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1783)
+Completed 200 OK in 15ms (Views: 11.6ms | Allocations: 2748)
+
+
+Started GET "/hi" for 127.0.0.1 at 2022-09-05 00:30:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/hi"):
+  
+Started GET "/home" for 127.0.0.1 at 2022-09-05 00:30:33 +0900
+Processing by HomeController#hi as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/hi.erb within layouts/application
+  Rendered home/hi.erb within layouts/application (Duration: 5.8ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 1399)
+Completed 200 OK in 13ms (Views: 10.5ms | Allocations: 1731)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-09-05 00:33:27 +0900
+Processing by HomeController#hi as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/hi.erb within layouts/application
+  Rendered home/hi.erb within layouts/application (Duration: 0.6ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1827)
+Completed 200 OK in 14ms (Views: 11.6ms | Allocations: 2601)
+
+
