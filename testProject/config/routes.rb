@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get 'result' => 'home#result'
   post 'result' => 'home#result'
 
+  get '/member/login' => 'member#login'
+  get '/member/register' => 'member#register'
+  post '/member/singup_member' => 'member#singup_member'
+
 
   # 4. URL로 request 메시지에 담아서 보내는 방법
   get 'plus/:num1/:num2' => 'home#plus'
