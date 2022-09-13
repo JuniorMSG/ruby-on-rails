@@ -57,3 +57,15 @@ def Q_1008()
 end
 
 Q_1008()
+
+
+# https://www.acmicpc.net/problem/1008
+def Q_1008()
+  str = gets.chomp
+  arr = str.split(" ")
+  numA = arr[0].to_f
+  numB = arr[1].to_f
+  puts numA / numB
+end
+
+Q_1008()
