@@ -56,16 +56,20 @@ def Q_1008()
   puts numA / numB
 end
 
-Q_1008()
+# Q_1008()
 
 
 # https://www.acmicpc.net/problem/1008
-def Q_1008()
+def Q_10869()
   str = gets.chomp
   arr = str.split(" ")
-  numA = arr[0].to_f
-  numB = arr[1].to_f
+  numA = arr[0].to_i
+  numB = arr[1].to_i
+  puts numA + numB
+  puts numA - numB
+  puts numA * numB
   puts numA / numB
+  puts numA % numB
 end
 
-Q_1008()
+Q_10869()
