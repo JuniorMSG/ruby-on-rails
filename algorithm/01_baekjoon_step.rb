@@ -82,3 +82,13 @@ def Q_10926()
 end
 
 Q_10926()
+
+# https://www.acmicpc.net/problem/18108
+def Q_18108()
+  inNum = gets.chomp.to_i
+  bulga = 2541-1998
+  numA = inNum + bulga
+  puts numA
+end
+
+Q_18108()
