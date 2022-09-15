@@ -72,4 +72,13 @@ def Q_10869()
   puts numA % numB
 end
 
-Q_10869()
+# Q_10869()
+
+# https://www.acmicpc.net/problem/10926
+def Q_10926()
+  str = gets.chomp
+  str += "??!"
+  puts str
+end
+
+Q_10926()
