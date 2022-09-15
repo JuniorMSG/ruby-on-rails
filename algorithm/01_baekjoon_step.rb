@@ -81,13 +81,12 @@ def Q_10926()
   puts str
 end
 
-Q_10926()
+# Q_10926()
 
 # https://www.acmicpc.net/problem/18108
 def Q_18108()
   inNum = gets.chomp.to_i
-  bulga = 2541-1998
-  numA = inNum + bulga
+  numA = inNum - 543
   puts numA
 end
 
