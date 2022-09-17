@@ -171,13 +171,18 @@ end
 # 첫째 줄부터 넷째 줄까지 차례대로 (3), (4), (5), (6)에 들어갈 값을 출력한다.
 
 def Q_2588()
-  numA = gets.chomp.to_i
+  numA = gets.to_i
   numB = gets.chomp
   numBs = numB.split("")
+  i = numBs.length - 1
+  sumAB = numA * numB.to_i
 
-  for data in numBs
-    puts numA * data.to_i
-    end
-  puts numA*numB.to_i
+  # (0..i).each do |data|
+  #   puts numA * numBs[i-data].to_i
+  # end
+  for data in 0..i
+    puts numA * numBs[i-data].to_i
+  end
+  print sumAB
 end
 Q_2588()
