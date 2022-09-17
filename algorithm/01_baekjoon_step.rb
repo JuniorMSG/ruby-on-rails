@@ -108,7 +108,6 @@ end
 
 출력
 첫째 줄에 입력에서 주어진 순서대로 몇 개의 피스를 더하거나 빼야 되는지를 출력한다. 만약 수가 양수라면 동혁이는 그 개수 만큼 피스를 더해야 하는 것이고, 음수라면 제거해야 하는 것이다.
-
 =end
 
 def Q_3003()
@@ -128,4 +127,57 @@ def Q_3003()
   print (2-knight), " "
   print (8-pawn), " "
 end
-Q_3003()
+# Q_3003()
+
+
+# https://www.acmicpc.net/problem/10430
+=begin
+문제
+(A+B)%C는 ((A%C) + (B%C))%C 와 같을까?
+(A×B)%C는 ((A%C) × (B%C))%C 와 같을까?
+세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오.
+
+입력
+첫째 줄에 A, B, C가 순서대로 주어진다. (2 ≤ A, B, C ≤ 10000)
+
+출력
+첫째 줄에 (A+B)%C, 둘째 줄에 ((A%C) + (B%C))%C, 셋째 줄에 (A×B)%C, 넷째 줄에 ((A%C) × (B%C))%C를 출력한다.
+=end
+
+def Q_10430()
+  str = gets.chomp
+  arr = str.split(" ")
+  numA = arr[0].to_i
+  numB = arr[1].to_i
+  numC = arr[2].to_i
+
+  puts (numA + numB) % numC
+  puts ((numA % numC) + (numB % numC)) % numC
+  puts (numA * numB) % numC
+  puts ((numA % numC) * (numB % numC))%numC
+end
+# Q_10430()
+
+
+# https://www.acmicpc.net/problem/2588
+# 문제
+# (세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
+# (1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
+#
+# 입력
+# 첫째 줄에 (1)의 위치에 들어갈 세 자리 자연수가, 둘째 줄에 (2)의 위치에 들어갈 세자리 자연수가 주어진다.
+#
+# 출력
+# 첫째 줄부터 넷째 줄까지 차례대로 (3), (4), (5), (6)에 들어갈 값을 출력한다.
+
+def Q_2588()
+  numA = gets.chomp.to_i
+  numB = gets.chomp
+  numBs = numB.split("")
+
+  for data in numBs
+    puts numA * data.to_i
+    end
+  puts numA*numB.to_i
+end
+Q_2588()
