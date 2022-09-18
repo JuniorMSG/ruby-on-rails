@@ -29,3 +29,31 @@ def Q_1330()
 end
 
 Q_1330()
+
+# https://www.acmicpc.net/problem/9498
+# 문제
+# 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오.
+#
+# 입력
+# 첫째 줄에 시험 점수가 주어진다. 시험 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.
+#
+# 출력
+# 시험 성적을 출력한다.
+#
+def Q_9498()
+  jumsu = gets.chomp.to_i
+
+  if jumsu >= 90
+    puts "A"
+  elsif jumsu >= 80
+    puts "B"
+  elsif jumsu >= 70
+    puts "C"
+  elsif jumsu >= 60
+    puts "D"
+  else
+    puts "F"
+  end
+end
+
+Q_9498()
