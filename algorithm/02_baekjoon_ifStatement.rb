@@ -145,7 +145,7 @@ def Q_2884()
       hour -= 1
       minute += 60
     end
-    puts "#{hour} #{minute}"
+    puts "#{hour} #{minute-45}"
   end
 end
 Q_2884()
