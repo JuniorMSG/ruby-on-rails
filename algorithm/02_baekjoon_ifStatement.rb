@@ -134,18 +134,15 @@ end
 # 첫째 줄에 상근이가 창영이의 방법을 사용할 때, 설정해야 하는 알람 시간을 출력한다. (입력과 같은 형태로 출력하면 된다.)
 def Q_2884()
   time = gets.chomp.split(" ")
-  hour = time[0].to_i
-  minute = time[1].to_i
+  minute = time[0].to_i * 60 + time[1].to_i - 45
 
-  if minute < 45	# 분단위가 45분보다 작을 때
-    if hour == 0 	# 0 시이면
-      hour = 23
-      minute += 60
-    else 	# 0시가 아니면 (0시보다 크면)
-      hour -= 1
-      minute += 60
-    end
-    puts "#{hour} #{minute-45}"
+  if minute < 0
+    minute = minute + 1440
   end
+  hour = minute/60
+  minute = minute%60
+
+  puts "#{hour} #{minute}"
+
 end
 Q_2884()
