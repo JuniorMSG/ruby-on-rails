@@ -146,6 +146,7 @@ Q_3003()
 ![image](https://user-images.githubusercontent.com/22822369/191791564-4a98a38c-1e8b-4686-9385-7354479c4ad0.png)
 
 ```ruby
+# 나머지
 def Q_10430()
   str = gets.chomp
   arr = str.split(" ")
@@ -185,7 +186,7 @@ Q_2588()
 ```
 
 
-## https://www.acmicpc.net/problem/10171
+## https://www.acmicpc.net/problem/10171 고양이
 ![image](https://user-images.githubusercontent.com/22822369/191791873-41139a90-64cf-40b0-9509-dc6077c75c00.png)
 ```ruby
 def Q_10171()
@@ -198,7 +199,7 @@ end
 Q_10171()
 ```
 
-## https://www.acmicpc.net/problem/10172
+## https://www.acmicpc.net/problem/10172 개
 ![image](https://user-images.githubusercontent.com/22822369/191791977-42353275-5d39-4f5c-a730-ffee68fc468d.png)
 
 ```ruby
