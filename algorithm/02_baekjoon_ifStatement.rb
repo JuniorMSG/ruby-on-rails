@@ -178,3 +178,41 @@ def Q_2525()
 
 end
 Q_2525()
+
+
+# https://www.acmicpc.net/problem/2480
+def Q_2480()
+  dices = gets.chomp.split(" ")
+  diceOne = dices[0].to_i
+  diceTwo = dices[1].to_i
+  diceThree = dices[2].to_i
+  dupCnt = 0
+
+  if diceOne == diceTwo
+    dupCnt += 1
+  end
+
+  if diceOne == diceThree
+    dupCnt += 1
+  end
+
+  if diceTwo == diceThree
+    dupCnt += 1
+  end
+
+
+  if dupCnt == 3
+    puts 10000 + (diceOne*3*1000)
+  elsif  dupCnt == 2
+    puts 1000 + (diceOne*2*100)
+  else
+    puts
+
+  end
+
+
+
+  puts "#{hour} #{minute}"
+
+end
+Q_2480()
