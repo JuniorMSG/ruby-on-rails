@@ -30,3 +30,11 @@ def Q_8393()
   puts value
 end
 Q_8393()
+
+
+# https://www.acmicpc.net/problem/25304 영수증
+
+def Q_25304()
+  puts "Q_25304"
+end
+Q_25304()
