@@ -18,3 +18,15 @@ def Q_10950()
   end
 end
 # Q_10950()
+
+
+# https://www.acmicpc.net/problem/8393 합
+def Q_8393()
+  testCasee = gets.chomp.to_i
+  value = 0
+    (1..testCasee).each do|i|
+      value = value + i
+    end
+  puts value
+end
+Q_8393()
