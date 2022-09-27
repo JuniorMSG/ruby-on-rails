@@ -52,21 +52,13 @@ end
 # Q_25304()
 
 
-# https://www.acmicpc.net/problem/25304 영수증
-def Q_25304()
-  total_price = gets.chomp.to_i
-  goods_cnt = gets.chomp.to_i
+# https://www.acmicpc.net/problem/15552 빠른 A+B
+def Q_15552()
+  input_cnt = gets.chomp.to_i
 
-
-  sum_price = 0
-  (1..goods_cnt).each do|i|
-    price, count = gets.chomp.split(" ")
-    sum_price += price.to_i * count.to_i
-  end
-  if total_price == sum_price
-    puts "Yes"
-  else
-    puts "No"
+  (1..input_cnt).each do|i|
+    num1, num2 = gets.chomp.split(" ")
+    puts num1.to_i + num2.to_i
   end
 end
-Q_25304()
+Q_15552()
