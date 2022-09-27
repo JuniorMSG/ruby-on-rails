@@ -29,12 +29,44 @@ def Q_8393()
     end
   puts value
 end
-Q_8393()
+# Q_8393()
 
 
 # https://www.acmicpc.net/problem/25304 영수증
-
 def Q_25304()
-  puts "Q_25304"
+  total_price = gets.chomp.to_i
+  goods_cnt = gets.chomp.to_i
+
+
+  sum_price = 0
+  (1..goods_cnt).each do|i|
+    price, count = gets.chomp.split(" ")
+    sum_price += price.to_i * count.to_i
+  end
+  if total_price == sum_price
+    puts "Yes"
+  else
+    puts "No"
+  end
+end
+# Q_25304()
+
+
+# https://www.acmicpc.net/problem/25304 영수증
+def Q_25304()
+  total_price = gets.chomp.to_i
+  goods_cnt = gets.chomp.to_i
+
+
+  sum_price = 0
+  (1..goods_cnt).each do|i|
+    price, count = gets.chomp.split(" ")
+    sum_price += price.to_i * count.to_i
+  end
+  if total_price == sum_price
+    puts "Yes"
+  else
+    puts "No"
+  end
 end
 Q_25304()
