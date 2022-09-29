@@ -73,4 +73,15 @@ def Q_11021()
     puts "Case ##{i}: #{num1.to_i + num2.to_i}"
   end
 end
-Q_11021()
+# Q_11021()
+
+# https://www.acmicpc.net/problem/11022 A+B - 8
+def Q_11022()
+  input_cnt = gets.chomp.to_i
+
+  (1..input_cnt).each do|i|
+    num1, num2 = gets.chomp.split(" ")
+    puts "Case ##{i}: #{num1.to_i} + #{num2.to_i} = #{num1.to_i + num2.to_i}"
+  end
+end
+Q_11022()
