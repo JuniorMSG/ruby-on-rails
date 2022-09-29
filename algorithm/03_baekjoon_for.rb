@@ -84,4 +84,33 @@ def Q_11022()
     puts "Case ##{i}: #{num1.to_i} + #{num2.to_i} = #{num1.to_i + num2.to_i}"
   end
 end
-Q_11022()
+# Q_11022()
+
+# https://www.acmicpc.net/problem/2438 별 찍기 - 1
+def Q_2438()
+  input_cnt = gets.chomp.to_i
+
+  str = ""
+  (1..input_cnt).each do|i|
+    str += "*"
+    puts str
+  end
+end
+# Q_2438()
+# https://www.acmicpc.net/problem/2439 별 찍기 - 2
+def Q_2439()
+  n = gets.chomp.to_i
+  k = 1
+  while n >= 1
+    for j in 1..n-1
+      print " "
+    end
+    for y in 1..k
+      print"*"
+    end
+    k = k+1
+    print "\n"
+    n = n-1
+  end
+end
+Q_2439()
