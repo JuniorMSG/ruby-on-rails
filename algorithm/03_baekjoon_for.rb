@@ -113,4 +113,20 @@ def Q_2439()
     n = n-1
   end
 end
-Q_2439()
+# Q_2439()
+
+# https://www.acmicpc.net/problem/10871 X보다 작은 수
+def Q_10871()
+  count = gets.chomp
+  value = gets.chomp.split(" ")
+
+  number = count.split(" ")
+
+  (0..number[0].to_i-1).each do|i|
+    if value[i].to_i < number[1].to_i
+      print "#{value[i].to_i} "
+    end
+  end
+
+end
+Q_10871()
