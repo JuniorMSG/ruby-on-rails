@@ -129,4 +129,30 @@ def Q_10871()
   end
 
 end
-Q_10871()
+# Q_10871()
+
+def for_statements()
+  for i in 0..4
+    puts "for 1 ::: #{i}"
+  end
+
+  (0..4).each do |i|
+    puts "each 1 ::: #{i}"
+  end
+
+  i = 0
+  while i < 10
+
+    if i == 5
+      break
+    end
+    if i == 8
+      next
+    end
+    puts "while 1 ::: #{i}"
+
+    i += 1
+
+  end
+end
+for_statements()
