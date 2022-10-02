@@ -155,4 +155,20 @@ def for_statements()
 
   end
 end
-for_statements()
+# for_statements()
+
+# https://www.acmicpc.net/problem/10952 A+B - 5
+def Q_10952()
+    while true
+      value = gets.chomp.split(" ")
+
+      num1 = value[0].to_i
+      num2 = value[1].to_i
+      if num1 == 0 and num2 == 0
+        break
+      end
+
+      puts num1 + num2
+  end
+end
+Q_10952()
