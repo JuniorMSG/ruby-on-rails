@@ -1,7 +1,7 @@
 # https://www.acmicpc.net/step/3
 #
 # https://www.acmicpc.net/problem/2739 구구단
-def Q_2739()
+  def Q_2739()
   dan = gets.chomp.to_i
   (1..9).each { |i|
     puts "#{dan} * #{i} = #{i * dan}"

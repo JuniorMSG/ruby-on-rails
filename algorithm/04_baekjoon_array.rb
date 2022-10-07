@@ -8,4 +8,17 @@ def Q_10818()
   puts "#{n.min} #{n.max}"
 end
 
-Q_10818()
+# Q_10818()
+
+# https://www.acmicpc.net/problem/2562
+def Q_2562()
+
+  arr = []
+  for i in 1..9
+    arr.append(gets.to_i)
+  end
+  puts arr.min
+  puts arr.max
+end
+
+Q_2562()
