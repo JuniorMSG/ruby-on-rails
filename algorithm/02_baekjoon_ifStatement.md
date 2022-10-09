@@ -132,3 +132,29 @@ def Q_2525()
 end
 Q_2525()
 ```
+
+# https://www.acmicpc.net/problem/2480 주사위 세개
+![image](https://user-images.githubusercontent.com/22822369/194764212-0e813aee-c4a3-499b-949d-3956c38cb049.png)
+
+
+```ruby
+def Q_2480()
+    dices = gets.chomp.split(" ")
+    diceOne = dices[0].to_i
+    diceTwo = dices[1].to_i
+    diceThree = dices[2].to_i
+    
+    diceMax = [diceOne, diceTwo, diceThree].max
+    
+    if diceOne == diceTwo && diceTwo == diceThree
+    puts 10000 + (diceOne*1000)
+    elsif diceOne == diceTwo || diceOne == diceThree
+    puts 1000 + (diceOne*100)
+    elsif diceTwo == diceThree
+    puts 1000 + (diceTwo*100)
+    else
+    puts diceMax * 100
+    end
+end
+Q_2480()
+```

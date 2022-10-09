@@ -198,6 +198,5 @@ def Q_2480()
   else
     puts diceMax * 100
   end
-
 end
 Q_2480()
