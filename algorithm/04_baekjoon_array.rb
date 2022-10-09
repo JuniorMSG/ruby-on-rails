@@ -34,11 +34,19 @@ def Q_3052()
   puts arr.uniq.length
 
 end
-Q_3052()
+# Q_3052()
 
 # https://www.acmicpc.net/problem/1546
 def Q_1546()
-  arr = []
+  subject = gets.to_i
+  n = gets.split.map &:to_i;
+
+  sum = 0
+  for i in n
+    sum += i.to_f/n.max*100
+  end
+
+  puts sum / n.length
 
 end
 Q_1546()
