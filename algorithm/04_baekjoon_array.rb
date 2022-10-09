@@ -49,4 +49,10 @@ def Q_1546()
   puts sum / n.length
 
 end
-Q_1546()
+# Q_1546()
+
+# https://www.acmicpc.net/problem/8958
+def Q_8958()
+
+end
+Q_8958()
