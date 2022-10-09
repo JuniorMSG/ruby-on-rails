@@ -35,3 +35,10 @@ def Q_3052()
 
 end
 Q_3052()
+
+# https://www.acmicpc.net/problem/1546
+def Q_1546()
+  arr = []
+
+end
+Q_1546()
