@@ -53,6 +53,22 @@ end
 
 # https://www.acmicpc.net/problem/8958
 def Q_8958()
+  n = gets.to_i
+  jumsu = 0
+  for i in 1..n
+    oxstrs = gets.split("")
+    ocnt = 0
+    for oxstr in oxstrs
+      if oxstr == "O"
+        ocnt += 1
+        jumsu += ocnt
+      else
+        ocnt = 0
+      end
+    end
+    puts jumsu
+    jumsu = 0
+  end
 
 end
 Q_8958()
