@@ -10,6 +10,7 @@ end
 
 # Q_10818()
 
+
 # https://www.acmicpc.net/problem/2562
 def Q_2562()
   arr = []
@@ -21,3 +22,11 @@ def Q_2562()
 end
 # https://guseowhtjs.tistory.com/entry/Ruby%EC%97%90%EC%84%9C-%EB%B0%B0%EC%97%B4%EC%97%90-%EA%B0%92%EC%9D%B4-%EC%9E%88%EB%8A%94%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95
 Q_2562()
+
+
+# https://www.acmicpc.net/problem/3052
+def Q_3052()
+  arr = []
+ 
+end
+Q_3052()
