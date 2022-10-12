@@ -81,12 +81,19 @@ def Q_4344()
     puts i
     inputNum = gets.split.map &:to_i;
     sum = 0
-    for i in 1..inputNum.length
-      sum += i
+    for i in 1..inputNum.length-1
+      sum += inputNum[i]
     end
 
+    avg = sum / inputNum[0]
 
-    puts sum / inputNum[0].to_f
+    case_over = 0
+    for i in 1..inputNum.length-1
+      if inputNum[i] >= avg
+        case_over += 1
+      end
+    end
+    puts ('%.3f' %  (case_over.to_f / (inputNum.length-1).to_f * 100).round(3)) + "%"
 
   end
 
