@@ -71,19 +71,29 @@ def Q_8958()
   end
 
 end
-#
+# Q_8958()
 
 # https://www.acmicpc.net/problem/4344
 def Q_4344()
-  subject = gets.to_i
-  n = gets.split.map &:to_i;
+  inputCase = gets.to_i
 
-  sum = 0
-  for i in n
-    sum += i.to_f/n.max*100
+  for i in 1..inputCase
+    puts i
+    inputNum = gets.split.map &:to_i;
+    sum = 0
+    for i in 1..inputNum.length
+      sum += i
+    end
+
+
+    puts sum / inputNum[0].to_f
+
   end
-
-  puts sum / n.length
 
 end
 Q_4344()
+
+# https://hee-dev.tistory.com/1
+# 변수 타입
+# 루비는 숫자형(Integer, Float)와 문자형(String), 부울 값(true, false), 그리고 값이 없음(nil)이 있습니다.
+# 다만 선언할 때 타입을 따로 구분하지는 않습니다.
