@@ -73,12 +73,15 @@ def Q_8958()
 end
 # Q_8958()
 
-# https://www.acmicpc.net/problem/4344
+# https://www.acmicpc.net/problem/
+## 문제요약
+### 1. 점수의 평균을 구한다.
+### 2. 평균을 넘는 개수를 구한다.
+### 3. 퍼센트를 출력한다...
 def Q_4344()
   inputCase = gets.to_i
 
   for i in 1..inputCase
-    puts i
     inputNum = gets.split.map &:to_i;
     sum = 0
     for i in 1..inputNum.length-1
@@ -89,14 +92,12 @@ def Q_4344()
 
     case_over = 0
     for i in 1..inputNum.length-1
-      if inputNum[i] >= avg
+      if inputNum[i] > avg
         case_over += 1
       end
     end
     puts ('%.3f' %  (case_over.to_f / (inputNum.length-1).to_f * 100).round(3)) + "%"
-
   end
-
 end
 Q_4344()
 
