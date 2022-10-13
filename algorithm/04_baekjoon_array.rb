@@ -105,3 +105,16 @@ Q_4344()
 # 변수 타입
 # 루비는 숫자형(Integer, Float)와 문자형(String), 부울 값(true, false), 그리고 값이 없음(nil)이 있습니다.
 # 다만 선언할 때 타입을 따로 구분하지는 않습니다.
+
+
+
+
+
+# https://www.acmicpc.net/problem/4673
+## 문제요약
+def Q_4673()
+
+  inputCase = gets.to_i
+
+end
+Q_4673()
