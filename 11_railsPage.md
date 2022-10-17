@@ -8,7 +8,19 @@
     Controller
     View 
 
-### routes.rb
+## 각 영역별 특징
+### Controller
+    app/controller 안에 def 명령어로 액션을 생성한다.
+### View
+    app/view/post에 생성한 액션과 같은 이름의 erb 파일을 만든다.
+### Model
+    rails g model Post
+    config/migrate 폴더의 migration 파일을 수정한다.
+    rake db:migrate
+
+
+
+## routes.rb
     # 주소로 처음 들어가면 HomeController 에서 index 엑션에 연결해주세요
     root 'home#index'
     get '/' => 'home#index'
@@ -71,3 +83,7 @@
 ## 결과
 ![image](https://user-images.githubusercontent.com/22822369/186714414-068ec61e-4243-4541-a0af-fbc9d217c78d.png)
 ![image](https://user-images.githubusercontent.com/22822369/186715363-e33c4668-d50c-4ad5-87bc-d7ca0734b647.png)
+
+
+
+
