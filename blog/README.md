@@ -1,4 +1,4 @@
-== README
+# README
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -24,5 +24,8 @@ Things you may want to cover:
 * ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Command
+|명령어| 용도                     | 몰라요오오~ |
+|---|------------------------|--------|
+|bin/rails server| 서버 키기                  ||
+|bin/rails generate controller Comments| Comments Controller 생성 |
