@@ -3,6 +3,7 @@
 Our blog has <%= Article.public_count %> articles and counting!
 
 <ul>
+  <% @articles %>
   <% @articles.each do |article| %>
     <% unless article.archived? %>
       <li>
@@ -11,5 +12,10 @@ Our blog has <%= Article.public_count %> articles and counting!
     <% end %>
   <% end %>
 </ul>
+
+<p><%= root_path %></p>
+<p><%= articles_path %></p>
+<p><%= new_article_path %></p>
+<p><%= edit_article_path(2) %></p>
 
 <%= link_to "New Article", new_article_path %>

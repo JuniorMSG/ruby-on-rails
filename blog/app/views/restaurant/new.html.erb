@@ -1,0 +1,21 @@
+<h1>Restaurant Create</h1>
+
+<%= form_with url: "/restaurant" do |form| %>
+  <%= form.label :name, "Restaurant Name" %>
+  <%= form.text_field :name %>
+
+  <br>
+  <%= form.label :location, "location" %>
+  <%= form.text_field :location %>
+
+  <br>
+  <%= form.label :genre, "genre" %>
+  <%= form.select :genre, ['한식', '중식', '일식'] %>
+  <%= form.submit "Create" %>
+<% end %>
+
+<%= form_with url: "/restaurant" do |form| %>
+  <div>
+    <%= form.submit "RE"%>
+  </div>
+<% end %>

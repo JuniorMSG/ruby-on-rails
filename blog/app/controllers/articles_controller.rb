@@ -1,9 +1,14 @@
 class ArticlesController < ApplicationController
 
   http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  # 세션(서버 저장) , 쿠키, 헤더
+  # devise Gem
+  #
 
   def index
+    puts Article.all
     @articles = Article.all
+    puts "===== article Type ::: #{@articles.class}"
   end
 
   def show
@@ -16,7 +21,6 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-
     if @article.save
       redirect_to @article
     else

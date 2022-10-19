@@ -8,5 +8,10 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  get "/lunch", to: "lunch#index"
+  # get "/restaurant", to: "restaurant#restaurant"
+
+  resources :restaurant
+  post "/restaurant/Test"
+
+
 end

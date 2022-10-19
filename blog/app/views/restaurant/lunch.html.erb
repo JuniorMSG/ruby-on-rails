@@ -1,0 +1,41 @@
+<div>
+  <p>Json/Hash</p>
+  <p>Name : <%= @member['name'] %></p>
+  <p>Age : <%= @member['age'] %></p>
+</div>
+
+<div>
+  <p><%= root_path %></p>
+  <p><%= articles_path %></p>
+  <p><%= new_article_path %></p>
+  <p><%= edit_article_path(2) %></p>
+</div>
+
+<h1><%= @index %></h1>
+<h1><%= @Hello %></h1>
+<h1><%= @open %></h1>
+<ul>
+  <li><%= link_to "test",  "/restaurant/Test"%></li>
+</ul>
+
+<!--
+  link_to - get 호출
+  link_to "표시값", path
+-->
+<%= form_with url: "/restaurant/Test" do |form| %>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<h1> 연습 </h1>
+
+<script>
+</script>
+<style>
+    h1 {
+        font-size : 35px;
+        text-align : center;
+    }
+
+</style>
