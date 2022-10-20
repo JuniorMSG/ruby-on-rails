@@ -1,8 +1,8 @@
-<h1>Restaurant Edit</h1>
+<h1>Restaurant Create</h1>
 
-<%= form_with model: @restaurant do |form| %>
+<%= form_with url: "/restaurants" do |form| %>
   <%= form.label :name, "Restaurant Name" %>
-  <%= form.text_field :name%>
+  <%= form.text_field :name %>
 
   <br>
   <%= form.label :location, "location" %>
@@ -14,3 +14,8 @@
   <%= form.submit "Create" %>
 <% end %>
 
+<%= form_with url: "/restaurants" do |form| %>
+  <div>
+    <%= form.submit "RE"%>
+  </div>
+<% end %>

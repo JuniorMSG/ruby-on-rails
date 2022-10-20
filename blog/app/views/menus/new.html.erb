@@ -1,0 +1,9 @@
+<h1>New menu</h1>
+
+<%= render "form", menu: [@restaurant, @restaurant.menus.build] %>
+<!--ActionView::Helpers::FormBuilder-->
+
+<br>
+<div>
+  <%= link_to "Back to menus", restaurant_path(@restaurant) %>
+</div>

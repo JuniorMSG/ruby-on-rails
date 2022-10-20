@@ -15,14 +15,15 @@
 <h1><%= @Hello %></h1>
 <h1><%= @open %></h1>
 <ul>
-  <li><%= link_to "test",  "/restaurant/Test"%></li>
+  <li><%= link_to "test",  "/restaurants/Test"%></li>
 </ul>
 
 <!--
+  cmd Test
   link_to - get 호출
   link_to "표시값", path
 -->
-<%= form_with url: "/restaurant/Test" do |form| %>
+<%= form_with url: "/restaurants/Test" do |form| %>
   <div>
     <%= form.submit %>
   </div>

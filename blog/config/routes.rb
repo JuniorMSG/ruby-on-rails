@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :menus
   root "articles#index"
 
   # get "/articles", to: "articles#index"
@@ -8,10 +9,18 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  # get "/restaurant", to: "restaurant#restaurant"
+  # get "/restaurants", to: "restaurants#restaurants"
 
-  resources :restaurant
-  post "/restaurant/Test"
+  resources :restaurants do
+    resources :menus
+  end
+
+  # https://tadhao.medium.com/member-vs-collection-in-rails-routes-ade10c8c5d19
+  #
+  post "/restaurants/Test"
+  post "/dinner/Test"
+  post "/lunch2/Test"
+
 
 
 end

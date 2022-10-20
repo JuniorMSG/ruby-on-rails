@@ -1,6 +1,6 @@
 <h1> lunch Index </h1>
 <ul>
-  <li><%= link_to "Lunch" %></li>
+  <li><%= link_to "restaurants" %></li>
 </ul>
 
 <table>
@@ -15,7 +15,7 @@
 
   <% @restaurant.each do |restaurant| %>
     <tr>
-      <td><%= link_to restaurant.name, "/restaurant/#{restaurant.id}/edit" %></td>
+      <td><%= link_to restaurant.name, "/restaurants/#{restaurant.id}" %></td>
       <td><%= restaurant.location %></td>
       <td><%= restaurant.recommend_menu %></td>
       <td><%= restaurant.recommend_cnt %></td>
@@ -24,11 +24,11 @@
   <% end %>
   </tbody>
 </table>
-<%= button_to "Create Restaurant", new_restaurant_path, :method => "get" %>
+<%= button_to "식당 추가", new_restaurant_path, :method => "get" %>
 
-<%= form_with url: "/restaurant/Test" do |form| %>
+<%= form_with url: "/restaurants/Test" do |form| %>
   <div>
-    <%= form.submit "Post /restaurant/Test" %>
+    <%= form.submit "Post /restaurants/Test" %>
   </div>
 <% end %>
 

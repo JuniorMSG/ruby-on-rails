@@ -1,0 +1,84 @@
+
+<h1> 식당 정보 </h1>
+<%= form_with model: @restaurant do |form| %>
+  <%= form.label :name, "Restaurant Name" %>
+  <%= form.text_field :name%>
+
+  <br>
+  <%= form.label :location, "location" %>
+  <%= form.text_field :location %>
+
+  <br>
+  <%= form.label :genre, "genre" %>
+  <%= form.select :genre, ['한식', '중식', '일식'] %>
+<% end %>
+<%= button_to "수정", edit_restaurant_path(@restaurant), :method => "get" %>
+
+<h1> 메뉴 정보 </h1>
+
+<table>
+  <thead>
+    <th>name</th>
+    <th>price</th>
+    <th>taste</th>
+    <th>volume</th>
+    <th>recommend_cnt</th>
+  </thead>
+  <tbody>
+
+
+  <% @restaurant.menus.each do |menu| %>
+    <tr>
+      <td><%= link_to menu.name, edit_restaurant_menu_path(@restaurant.id, menu.id) %></td>
+      <td><%= menu.price %></td>
+      <td><%= menu.taste %></td>
+      <td><%= menu.volume %></td>
+      <td><%= menu.recommend_cnt %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<%= button_to "추가", new_restaurant_menu_path(@restaurant), :method => "get" %>
+
+
+<style>
+    h1 {
+        font-size : 35px;
+        text-align : center;
+    }
+
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    table tr:nth-child(even){background-color: #f2f2f2;}
+
+    table tr:hover {background-color: #ddd;}
+
+    table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+</style>
