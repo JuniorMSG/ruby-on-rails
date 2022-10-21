@@ -13,6 +13,8 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+
+    puts @article.comments
   end
 
   def new
@@ -43,6 +45,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to root_path, status: :see_other

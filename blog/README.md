@@ -6,7 +6,7 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+    
 * System dependencies
 
 * Configuration
@@ -23,7 +23,27 @@ Things you may want to cover:
 
 * ...
 
-3
+## Tools / Setting
+
+### IDE - RubyMine
+[Ruby-Mine](https://www.jetbrains.com/ko-kr/ruby/)
+### Elasticsearch
+[El](https://www.elastic.co/kr/what-is/elasticsearch)
+
+### Docker
+### confluence
+### Slack
+### Jira
+### Docswave
+### notion
+### google spreadsheets
+
+
+
+
+
+
+
 
 ## Command
 
@@ -32,7 +52,7 @@ Things you may want to cover:
 |bin/rails server| 서버 키기                  ||
 |bin/rails generate controller Comments| Comments Controller 생성 |
 
-## Command by DB
+### Command by DB
 
 | 명령어                                | 용도                     | 몰라요오오~ |
 |------------------------------------|------------------------|--------|
@@ -43,14 +63,14 @@ Things you may want to cover:
 | rails generate migrate OOO         | 마이그레이션 파일 생성           ||
 | rails db:migrate                   | 마이그레이션 파일 저장           ||
 
-## View
+### View
 
 [action_view_overview](https://guides.rubyonrails.org/action_view_overview.html)
 
     ERB 템플릿 내에서 <% %>및 <%= %>태그를 모두 사용하여 Ruby 코드를 포함할 수 있습니다. 
     <% %>태그는 조건, 루프, 블록 등 아무 것도 반환하지 않는 Ruby 코드를 실행하는 데 사용되며 태그 
     <%= %>는 출력을 원할 때 사용됩니다.
-## useful ShortCuts by Create
+### useful ShortCuts by Create
 | 명령어                 | 용도          | 몰라요오오~ |
 |---------------------|-------------|--------|
 | cmd + n             | 파일 생성       ||
@@ -58,7 +78,7 @@ Things you may want to cover:
 | option + 방향키(위, 아래) | 포커스 확장 및 축소 ||
 
 
-## useful ShortCuts by Focus    
+### useful ShortCuts by Focus    
 | 명령어                 | 용도          | 몰라요오오~ |
 |---------------------|-------------|--------|
 | cmd + 방향키           | 라인 단위 이동    ||
@@ -66,7 +86,7 @@ Things you may want to cover:
 | option + 방향키(위, 아래) | 포커스 확장 및 축소 ||
 
 
-## useful ShortCuts by Finder
+### useful ShortCuts by Finder
 | 명령어                   | 용도           | 몰라요오오~ |
 |-----------------------|--------------|--------|
 | cmd + e               | 최근 열었던 파일 목록 ||
@@ -83,7 +103,8 @@ Things you may want to cover:
 | Shift + Shift         | 전체 검색        ||
 | Option + F1 + Project | 현재 소스 위치 추적  ||
 
-## useful ShortCuts by Refactor
+
+### useful ShortCuts by Refactor
 | 명령어                  | 용도           | 몰라요오오~ |
 |----------------------|--------------|--------|
 | Command + D          | 줄 복사         ||
@@ -95,6 +116,7 @@ Things you may want to cover:
 | Command + Option + l | 코드 컨벤션 체크 ||
 
 
-## 
 
 
+## Book
+http://www.yes24.com/Product/Goods/15254976

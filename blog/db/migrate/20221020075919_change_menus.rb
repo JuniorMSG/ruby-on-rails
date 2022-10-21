@@ -1,6 +1,5 @@
 class ChangeMenus < ActiveRecord::Migration[7.0]
   def change
-    drop_table :menus
     create_table :menus do |t|
       t.string :name
       t.references :restaurant, null: false, foreign_key: true

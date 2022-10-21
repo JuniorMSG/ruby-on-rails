@@ -18,13 +18,22 @@
 <%# end %>
 
 <%= form_with model: menu do |form| %>
+
+
+  <p><%= @restaurant.errors.full_messages_for(:name) %> </p>
   <div>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
+    <% @restaurant.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
   </div>
   <div>
     <%= form.label :price %><br>
     <%= form.text_field :price %>
+    <% @restaurant.errors.full_messages_for(:price).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
   </div>
 
   <div>
@@ -35,11 +44,6 @@
   <div>
     <%= form.label :volume %><br>
     <%= form.text_field :volume %>
-  </div>
-
-  <div>
-    <%= form.label :recommend_cnt %><br>
-    <%= form.text_field :recommend_cnt %>
   </div>
 
   <p>

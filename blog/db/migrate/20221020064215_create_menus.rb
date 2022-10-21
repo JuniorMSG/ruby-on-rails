@@ -1,14 +1,14 @@
 class CreateMenus < ActiveRecord::Migration[7.0]
   def change
-    create_table :menus do |t|
-
-      t.string :name
-      t.references :restaurant, null: false, foreign_key: true
-      t.integer :price
-      t.integer :taste
-      t.integer :volume
-      t.integer :recommend_cnt
-      t.timestamps
-    end
+    # create_table :menus do |t|
+    #
+    #   t.string :name
+    #   t.references :restaurant, null: false, foreign_key: true
+    #   t.integer :price
+    #   t.integer :taste
+    #   t.integer :volume
+    #   t.integer :recommend_cnt
+    #   t.timestamps
+    # end
   end
 end

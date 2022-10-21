@@ -12,6 +12,7 @@ class RestaurantsController < ApplicationController
       "name" => "MSG",
       "age" => 29,
     }
+
     @typeTest = Hash.new()
     @typeTest['name'] = "KSG"
     puts "@member Type ::: #{@member.class}"
@@ -22,7 +23,6 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
-    puts
 
   end
 
