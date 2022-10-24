@@ -53,11 +53,50 @@
 <%= button_to "삭제", "/restaurants/1/menus/",
               form: { id: "delete_menus"},
               method: :delete,
-              data: {turbo_confirm: "Are you sure?"}%>
+              data: {turbo_confirm: "Are you sure?"}%> <br>
 
 <%= button_to "삭제2", new_restaurant_menu_path(@restaurant), remote: true,
               form: { "data-type" => "json" },
               method: :delete%>
+
+<br>
+
+
+
+<h1> 메뉴 정보 (Form 포함) </h1>
+<table id="menus2">
+  <thead>
+  <th>수정</th>
+  <th>name</th>
+  <th>price</th>
+  <th>taste</th>
+  <th>volume</th>
+  <th>recommend_cnt</th>
+  <th>삭제</th>
+  </thead>
+  <tbody>
+
+
+  <% @restaurant.menus.each do |menu| %>
+    <tr>
+      <td> <input type="checkbox" name="menus[status]" /> </td>
+      <td><%= link_to menu.name, edit_restaurant_menu_path(@restaurant.id, menu.id) %></td>
+      <td><%= menu.price %>원</td>
+      <td><%= menu.taste %>점</td>
+      <td><%= menu.volume %>점</td>
+      <td><%= menu.recommend_cnt %></td>
+      <td>
+        <%= link_to "삭제", restaurant_menu_path(@restaurant.id, menu.id), data: {
+          turbo_method: :delete,
+          turbo_confirm: "Are you sure?"
+        } %>
+
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
 
 
 <script>
@@ -74,7 +113,6 @@
 
         }
     }
-
 </script>
 
 <style>
