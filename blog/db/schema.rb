@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_22_143028) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_24_053308) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -32,10 +32,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_22_143028) do
   create_table "menus", force: :cascade do |t|
     t.string "name"
     t.integer "restaurant_id", null: false
-    t.string "price"
-    t.string "taste"
-    t.string "volume"
-    t.string "recommend_cnt"
+    t.integer "price", limit: 80, default: 0
+    t.integer "taste", limit: 80, default: 0
+    t.integer "volume", limit: 80, default: 0
+    t.integer "recommend_cnt", limit: 80, default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["restaurant_id"], name: "index_menus_on_restaurant_id"
@@ -64,11 +64,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_22_143028) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "user_id"
-    t.string "user_name"
-    t.string "phone_number"
+    t.string "email"
+    t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
   add_foreign_key "comments", "articles"

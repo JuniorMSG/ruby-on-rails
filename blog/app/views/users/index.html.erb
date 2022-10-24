@@ -1,14 +1,118 @@
-<p style="color: green"><%= notice %></p>
+<div id="signUpStep1Con" style="display: block">
+  <div id="contents">
+    <%= button_tag "Restaurant", :type => 'button', :class => "subBtn", :onclick => "location.href = '#{restaurants_path}'" %>
+  </div>
 
-<h1>Users</h1>
 
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+  <div>
+    <div id="contents_wrap">
+      <div id="contents">
+        <form class="login_user" id="login_user" novalidate="">
+          <div id="signInSignInCon" class="sign_con signin_con">
+            <div class="sign_notice_info"><p>잡플래닛은 회원님의 익명성을 보장하기 위해<br> 어떠한 개인정보도 노출하지 않습니다.</p></div>
+            <div class="signInsignIn_wrap">
+              <div class="sign_wrap"><h2>로그인</h2>
+                <section class="section_email er_r">
+
+                  <fieldset>
+                    <label class="email">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_email" name="user[email]" placeholder="이메일 주소" type="email" value="">
+                      <span class="error_txt">잘못된 형식의 이메일 주소입니다.</span>
+                    </label>
+                    <label class="password">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_password" name="user[password]" placeholder="비밀번호 (8자리 이상)" type="password" value="">
+                      <span class="error_txt">올바르지 않은 비밀번호 형식입니다.</span>
+                    </label>
+                    <%= button_tag "이메일로 로그인", :type => 'button', :class => "btn_sign_up", :onclick => "location.href = '#{restaurants_path}'" %>
+                    <%= button_tag "Restaurant", :type => 'button', :class => "btn_sign_up signup_step1", :onclick => "location.href = '#{restaurants_path}'" %>
+                  </fieldset>
+                </section>
+
+              </div>
+              <section class="section_login">
+                <p class="login_check">아직 회원이 아니세요?
+                  <a>회원가입</a>
+                </p>
+
+              </section>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
-<%= link_to "New user", new_user_path %>
+
+
+
+<div id="signUpStep2Con" style="display: none">>
+  <div>
+    <div id="contents_wrap">
+      <div id="contents">
+          <div id="signInSignInCon" class="sign_con signin_con">
+            <div class="sign_notice_info"><p>잡플래닛은 회원님의 익명성을 보장하기 위해<br> 어떠한 개인정보도 노출하지 않습니다.</p></div>
+            <div class="signInsignIn_wrap">
+              <div class="sign_wrap"><h2>로그인</h2>
+                <section class="section_email er_r">
+
+                  <fieldset>
+                    <label class="email">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_email" name="user[email]" placeholder="이메일 주소" type="email" value="">
+                      <span class="error_txt">잘못된 형식의 이메일 주소입니다.</span>
+                    </label>
+                    <label class="password">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_password" name="user[password]" placeholder="비밀번호 (8자리 이상)" type="password" value="">
+                      <span class="error_txt">올바르지 않은 비밀번호 형식입니다.</span>
+                    </label>
+                    <label class="password_check">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_password_confirmation" name="user[password_confirmation]" placeholder="비밀번호 확인" type="password" value="">
+                      <span class="error_txt">올바르지 않은 비밀번호 형식입니다.</span>
+                    </label>
+                    <button class="btn_sign_up" id="sign_up">회원가입</button>
+                  </fieldset>
+
+                </section>
+
+
+              </div>
+              <section class="section_login">
+                <p class="login_check">이미 회원이세요?
+                  <a>로그인</a>
+                </p>
+              </section>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+  document.getElementsByClassName("login_check")[0].addEventListener('click', change_page1, false);
+  document.getElementsByClassName("login_check")[1].addEventListener('click', change_page2, false);
+
+  function change_page1(){
+      console.log("1111")
+      document.getElementById("signUpStep1Con").style.display = "none";
+      document.getElementById("signUpStep2Con").style.display = "block";
+  }
+  function change_page2(){
+      console.log("2222")
+      document.getElementById("signUpStep1Con").style.display = "block";
+      document.getElementById("signUpStep2Con").style.display = "none";
+  }
+
+  document.getElementById("sign_up").addEventListener('click', create_users, false);
+  function create_users(){
+      console.log("create Users");
+      url = "/users"
+  }
+</script>

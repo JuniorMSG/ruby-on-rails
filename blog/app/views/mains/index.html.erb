@@ -1,0 +1,53 @@
+<p style="color: green"></p>
+
+<h1>main Page</h1>
+
+<%= stylesheet_link_tag "jobplanetcss.css" %>
+<%= stylesheet_link_tag "font-awesome-css.min.css" %>
+
+<div id="menus">
+
+  <%= button_tag "Restaurant", :type => 'button', :class => "subBtn", :onclick => "location.href = '#{restaurants_path}'" %>
+  <%= button_tag "회원가입", :type => 'button', :class => "subBtn", :onclick => "location.href = '#{restaurants_path}'" %>
+
+</div>
+
+
+<div id="SignUpApp-react-component-02146f80-7dec-43fb-b3f1-c6321500544e">
+  <div>
+    <div id="contents_wrap">
+      <div id="contents">
+        <form class="new_user" id="new_user" novalidate="">
+          <div id="signInSignInCon" class="sign_con signin_con">
+            <div class="sign_notice_info"><p>잡플래닛은 회원님의 익명성을 보장하기 위해<br> 어떠한 개인정보도 노출하지 않습니다.</p></div>
+            <div class="signInsignIn_wrap">
+              <div class="sign_wrap"><h2>로그인</h2>
+                <section class="section_email er_r">
+
+                  <fieldset>
+                    <label class="email">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_email" name="user[email]" placeholder="이메일 주소" type="email" value="">
+                      <span class="error_txt">잘못된 형식의 이메일 주소입니다.</span>
+                    </label>
+                    <label class="password">
+                      <span class="tit"></span>
+                      <input data-valid="false" id="user_password" name="user[password]" placeholder="비밀번호 (8자리 이상)" type="password" value="">
+                      <span class="error_txt">올바르지 않은 비밀번호 형식입니다.</span>
+                    </label>
+                    <%= button_tag "이메일로 로그인", :type => 'button', :class => "btn_sign_up", :onclick => "location.href = '#{restaurants_path}'" %>
+                  </fieldset>
+                  <div class="login_keep">
+                    <label class="btn_check"><input type="checkbox" class="cscheck" id="user_remember_me" name="user[remember_me]" checked=""><span class="jp-checkbox-checked_fill"></span><span class="check_txt">로그인 상태 유지</span></label><a href="/users/password/new" class="txt_pw">비밀번호
+                    찾기</a></div>
+                </section>
+              </div>
+              <section class="section_login"><p class="login_check">아직 회원이 아니세요?<a>회원가입</a></p></section>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

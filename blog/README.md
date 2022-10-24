@@ -43,7 +43,8 @@ Things you may want to cover:
 
 
 
-
+## Tip
+/rails/info/routes (세부 경로 확인 가능)
 
 ## Command
 
@@ -60,7 +61,7 @@ Things you may want to cover:
 | rails generate controller Comments | Comments Controller 생성 |
 | rails generate model Article       | DB 생성                  |
 | rails generate scaffold ~          | 관련 생성 목록 전체 생성         ||
-| rails generate migrate OOO         | 마이그레이션 파일 생성           ||
+| rails generate migration OOO       | 마이그레이션 파일 생성           ||
 | rails db:migrate                   | 마이그레이션 파일 저장           ||
 
 ### View

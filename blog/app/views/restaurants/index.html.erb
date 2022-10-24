@@ -1,7 +1,9 @@
 <h1> lunch Index </h1>
+<!--
 <ul>
-  <li><%= link_to "restaurants" %></li>
+  <li><%#= link_to "restaurants" %></li>
 </ul>
+-->
 
 <table>
   <thead>
@@ -25,6 +27,7 @@
   </tbody>
 </table>
 <%= button_to "식당 추가", new_restaurant_path, :method => "get" %>
+<%= button_to "로그인", users_path, :method => "get" %>
 
 <%= form_with url: "/restaurants/Test" do |form| %>
   <div>

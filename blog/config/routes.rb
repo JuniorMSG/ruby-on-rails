@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   resources :users
   resources :menus
-  root "articles#index"
+
+  get "jobs" => "jobs#index"
+  root "jobs#index"
+
+  get "mains" => "mains#index"
+  # root "articles#index"
 
   # get "/articles", to: "articles#index"
   # get "/articles/:id", to: "articles#show"

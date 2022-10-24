@@ -1,29 +1,29 @@
 <h1>Restaurant Edit</h1>
+<div id="new">
+  <%= form_with model: @restaurant do |form| %>
+    <%= form.label :name, "Restaurant Name" %>
+    <%= form.text_field :name%>
 
-<%= form_with model: @restaurant do |form| %>
-  <%= form.label :name, "Restaurant Name" %>
-  <%= form.text_field :name%>
+    <br>
+    <%= form.label :location, "location" %>
+    <%= form.text_field :location %>
 
-  <br>
-  <%= form.label :location, "location" %>
-  <%= form.text_field :location %>
-
-  <br>
-  <%= form.label :genre, "genre" %>
-  <%= form.select :genre, ['한식', '중식', '일식'] %>
-  <%= form.submit "식당 업데이트" %>
-<% end %>
-
-<%= @h[:id] %>
-<%= @h[:name] %>
-<%= @h[:data] %>
-
-<div id="msg">
-  <% 5.times.each do |i| %>
-    <span>Hello <%= i %></span>
+    <br>
+    <%= form.label :genre, "genre" %>
+    <%= form.select :genre, ['한식', '중식', '일식'] %>
+    <%= form.submit "식당 업데이트" %>
   <% end %>
-</div>
 
+  <%= @h[:id] %>
+  <%= @h[:name] %>
+  <%= @h[:data] %>
+
+  <div id="msg">
+    <% 5.times.each do |i| %>
+      <span>Hello <%= i %></span>
+    <% end %>
+  </div>
+</div>
 <script>
   var a = "<%= "aaa" %>"
 </script>

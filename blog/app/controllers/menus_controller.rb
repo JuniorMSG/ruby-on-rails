@@ -7,14 +7,14 @@ class MenusController < ApplicationController
 
   ## (3, 4) 페이지가 다른 화면에서 같은 컨트롤러 CRUD 테스트용
   # 3. 메뉴 수정 - 상세 페이지에서 수정  (완료)
-  # 4. 메뉴 삭제 - index 페이지에서 삭제 ( 진행중 )
+  # 4. 메뉴 삭제 - index 페이지에서 삭제 ( 완료 )
   ## 4-1. 메뉴 개별 삭제 (완료)
-  ## 4-2. 메뉴 멀티 삭제
+  ## 4-2. 메뉴 멀티 삭제 (완료)
 
   ## (5, 6, 7) 전체 수정 테스트용
-  # 5. menus migration (price, taste(1~10), volume(1~10), recommend_cnt(++) type 변경 varchar -> integer ? big int)
+  # 5. menus migration (price, taste(1~10), volume(1~10), recommend_cnt(++) type 변경 varchar -> integer ? big int) (완료)
   # 6. recommend_cnt 클릭시 1씩 증가하도록 만들기
-  # 7. volume, taste 범위 1 ~ 10 제약조건 걸기
+  # 7. volume, taste 범위 1 ~ 10 제약조건 걸기 (완료)
 
   # 8. 로그인 및 유저 컨트롤러 생성하여 recommend_cnt 에서 추가한 목록 보여주기. (작업 내역은 각 컨트롤러별 작성.)
   # 9. 로그인된 유저의 메뉴 추천 데이터에 따라서 체크해보기

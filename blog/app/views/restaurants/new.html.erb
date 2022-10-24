@@ -1,21 +1,23 @@
 <h1>Restaurant Create</h1>
 
-<%= form_with url: "/restaurants" do |form| %>
-  <%= form.label :name, "Restaurant Name" %>
-  <%= form.text_field :name %>
+<div id="new">
+  <%= form_with url: "/restaurants" do |form| %>
+    <%= form.label :name, "Restaurant Name" %>
+    <%= form.text_field :name %>
 
-  <br>
-  <%= form.label :location, "location" %>
-  <%= form.text_field :location %>
+    <br>
+    <%= form.label :location, "location" %>
+    <%= form.text_field :location %>
 
-  <br>
-  <%= form.label :genre, "genre" %>
-  <%= form.select :genre, ['한식', '중식', '일식'] %>
-  <%= form.submit "Create" %>
-<% end %>
+    <br>
+    <%= form.label :genre, "genre" %>
+    <%= form.select :genre, ['한식', '중식', '일식'] %>
+    <%= form.submit "생성" %>
+  <% end %>
 
-<%= form_with url: "/restaurants" do |form| %>
-  <div>
-    <%= form.submit "RE"%>
-  </div>
-<% end %>
+  <%= form_with url: "/restaurants", method: :get do |form| %>
+    <div>
+      <%= form.submit "되돌아가기 Get "%>
+    </div>
+  <% end %>
+</div>

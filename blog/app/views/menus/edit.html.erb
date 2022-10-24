@@ -1,10 +1,11 @@
 <h1>Editing menu</h1>
+<div id="new">
+  <%= render "form", menu: [@restaurant, @menu] %>
 
-<%= render "form", menu: [@restaurant, @menu] %>
+  <br>
 
-<br>
-
-<div>
-  <%= link_to "Show this menu", @menu %> |
-  <%= link_to "Back to menus", restaurant_path(@restaurant) %>
+  <div>
+    <%= link_to "Show this menu", @menu %> |
+    <%= link_to "Back to menus", restaurant_path(@restaurant) %>
+  </div>
 </div>

@@ -21,7 +21,23 @@ class UsersController < ApplicationController
 
   # POST /users or /users.json
   def create
-    @user = User.new(user_params)
+    puts "===users create==="
+
+
+    @user = User.new()
+    @user.email = params[:user][:email]
+    @user.password = params[:user][:password]
+
+    user_password_confirmation = params[:user][:password_confirmation]
+
+    if @user.password != user_password_confirmation
+      @errors = "password 일치하지 않음."
+
+      puts @errors
+      return @errors
+    end
+
+    puts "password Check #{user_password_confirmation}"
 
     respond_to do |format|
       if @user.save
@@ -60,11 +76,13 @@ class UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      @user = User.find(params[:email])
     end
 
     # Only allow a list of trusted parameters through.
-    def user_params
-      params.fetch(:user, {})
-    end
+    # def user_params
+    #   # params.fetch(:email, {})
+    #   params.require(:user).permit(:email, :password)
+    #   params.require(:params).permit(:password_confirmation)
+    # end
 end

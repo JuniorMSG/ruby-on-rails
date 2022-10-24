@@ -1,20 +1,26 @@
 
 <h1> 식당 정보 </h1>
+<div id="new">
 <%= form_with model: @restaurant do |form| %>
   <%= form.label :name, "Restaurant Name" %>
-  <%= form.text_field :name%>
+  <%= form.text_field :name, readonly: true%>
 
   <br>
   <%= form.label :location, "location" %>
-  <%= form.text_field :location %>
+  <%= form.text_field :location , readonly: true%>
 
   <br>
   <%= form.label :genre, "genre" %>
-  <%= form.select :genre, ['한식', '중식', '일식'] %>
+  <%= form.select :genre, ['한식', '중식', '일식'], {}, disabled: true%>
 <% end %>
 <%= button_to "수정", edit_restaurant_path(@restaurant), :method => "get" %>
+<%= button_to "삭제", restaurant_path(@restaurant), :method => "delete" %>
 
-<h1> 메뉴 정보 </h1>
+
+<%= button_to "돌아가기 Ruby", restaurants_path, :method => "get" %>
+<button id="restaurant">돌아가기 JS 처리</button>
+
+<h1> 메뉴 정보 값 변경</h1>
 
 <table id="menus">
   <thead>
@@ -49,17 +55,13 @@
   </tbody>
 </table>
 
-<%= button_to "추가", new_restaurant_menu_path(@restaurant), method: "get" %> <br>
-<%= button_to "삭제", "/restaurants/1/menus/",
+<%= button_to "추가", new_restaurant_menu_path(@restaurant), method: "get" %>
+<%= button_to "삭제", restaurant_menu_path(@restaurant.id, 0),
               form: { id: "delete_menus"},
               method: :delete,
-              data: {turbo_confirm: "Are you sure?"}%> <br>
+              data: {turbo_confirm: "Are you sure?"}%>
 
-<%= button_to "삭제2", new_restaurant_menu_path(@restaurant), remote: true,
-              form: { "data-type" => "json" },
-              method: :delete%>
-
-<br>
+<button id="btn_del">삭제 by button</button>
 
 
 
@@ -98,7 +100,7 @@
 </table>
 
 
-
+</div>
 <script>
     menus = document.getElementsByName('menu_check');
     for (i=0; i<menus.length; i++){
@@ -113,9 +115,20 @@
 
         }
     }
+
+    document.getElementById("restaurant").addEventListener('click', function(){
+        location.href = `${"<%= restaurants_path %>"}`
+      /*  location.replace(`${"<%= restaurants_path %>"}`) */
+    }, false);
+
+
 </script>
 
 <style>
+    .button_to {
+        width: 20%;
+        display: inline-block;
+    }
     h1 {
         font-size : 35px;
         text-align : center;
@@ -144,14 +157,5 @@
         color: white;
     }
 
-    button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
+
 </style>
