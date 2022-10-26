@@ -47,13 +47,7 @@ Things you may want to cover:
 /rails/info/routes (세부 경로 확인 가능)
 
 ## Command
-
-|명령어| 용도                     | 비고 |
-|---|------------------------|--------|
-|bin/rails server| 서버 키기                  ||
-|bin/rails generate controller Comments| Comments Controller 생성 |
-
-### Command by DB
+### Command 
 
 | 명령어                                | 용도                     | 비고 |
 |------------------------------------|------------------------|--------|
@@ -71,7 +65,15 @@ Things you may want to cover:
     ERB 템플릿 내에서 <% %>및 <%= %>태그를 모두 사용하여 Ruby 코드를 포함할 수 있습니다. 
     <% %>태그는 조건, 루프, 블록 등 아무 것도 반환하지 않는 Ruby 코드를 실행하는 데 사용되며 태그 
     <%= %>는 출력을 원할 때 사용됩니다.
-### useful ShortCuts by Create
+    
+## MAC
+| 명령어                 | 용도          | 비고 |
+|---------------------|-------------|--------|
+| ctrl + cmd + space   | 특수 기호 입력      ||
+||||
+
+## JetBrains ShortCuts 
+### Create
 | 명령어                 | 용도          | 비고 |
 |---------------------|-------------|--------|
 | cmd + n             | 파일 생성       ||
@@ -79,36 +81,38 @@ Things you may want to cover:
 | option + 방향키(위, 아래) | 포커스 확장 및 축소 ||
 
 
-### useful ShortCuts by Focus    
+### Focus    
 | 명령어                 | 용도          | 비고 |
 |---------------------|-------------|--------|
+| Ctrl + 1~9           | 마우스 안쓰고 싶을때..  |  ⭐️ |
+| Opt + F12 | ruby mine console | ⭐️ |
 | cmd + 방향키           | 라인 단위 이동    ||
 | option + 방향키(좌, 우)  | 단어 단위 이동    ||
 | option + 방향키(위, 아래) | 포커스 확장 및 축소 ||
 
 
-### useful ShortCuts by Finder
+### Finder
 | 명령어                   | 용도           | 비고 |
 |-----------------------|--------------|--------|
 | cmd + e               | 최근 열었던 파일 목록 ||
 | cmd + shift + e       | 최근 수정한 파일 목록 ||
-| cmd + control + g     | 일치하는 단어 전체 선택 ||
+| cmd + control + g     | 일치하는 단어 전체 선택 | ⭐️ |
 | F2                    | 오류난 곳으로 이동   ||
 | cmd + F               | 현재 파일에서 검색   ||
 | cmd + Shift + F       | 전체 파일에서 검색   ||
 | cmd + R               | 현재 파일에서 변경   ||
 | cmd + Shift + R       | 전체 파일에서 변경   ||
-| opt + opt + 방향키       | 멀티 포커스 (세로모드) ||
+| opt + opt + 방향키       | 멀티 포커스 (세로모드) | ⭐️ |
 | Cmd + [, ]            | 이전 작업으로 이동   ||
 | Cmd + Shift [, ]      | 열린창 이동       ||
 | Shift + Shift         | 전체 검색        ||
 | Option + F1 + Project | 현재 소스 위치 추적  ||
 
 
-### useful ShortCuts by Refactor
+### Refactor
 | 명령어                  | 용도           | 비고 |
 |----------------------|--------------|--------|
-| Command + D          | 줄 복사         ||
+| Command + D          | 줄 복사         | ⭐️ |
 | shift + F6           | 파일이름 변경      ||
 | Command + Option + M | 메소드 분리       ||
 | Command + Option + c | 상수 분리        ||
