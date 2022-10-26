@@ -48,14 +48,14 @@ Things you may want to cover:
 
 ## Command
 
-|명령어| 용도                     | 몰라요오오~ |
+|명령어| 용도                     | 비고 |
 |---|------------------------|--------|
 |bin/rails server| 서버 키기                  ||
 |bin/rails generate controller Comments| Comments Controller 생성 |
 
 ### Command by DB
 
-| 명령어                                | 용도                     | 몰라요오오~ |
+| 명령어                                | 용도                     | 비고 |
 |------------------------------------|------------------------|--------|
 | rails server                       | 서버 키기                  ||
 | rails generate controller Comments | Comments Controller 생성 |
@@ -72,7 +72,7 @@ Things you may want to cover:
     <% %>태그는 조건, 루프, 블록 등 아무 것도 반환하지 않는 Ruby 코드를 실행하는 데 사용되며 태그 
     <%= %>는 출력을 원할 때 사용됩니다.
 ### useful ShortCuts by Create
-| 명령어                 | 용도          | 몰라요오오~ |
+| 명령어                 | 용도          | 비고 |
 |---------------------|-------------|--------|
 | cmd + n             | 파일 생성       ||
 | option + 방향키(좌, 우)  | 단어 단위 이동    ||      
@@ -80,7 +80,7 @@ Things you may want to cover:
 
 
 ### useful ShortCuts by Focus    
-| 명령어                 | 용도          | 몰라요오오~ |
+| 명령어                 | 용도          | 비고 |
 |---------------------|-------------|--------|
 | cmd + 방향키           | 라인 단위 이동    ||
 | option + 방향키(좌, 우)  | 단어 단위 이동    ||
@@ -88,7 +88,7 @@ Things you may want to cover:
 
 
 ### useful ShortCuts by Finder
-| 명령어                   | 용도           | 몰라요오오~ |
+| 명령어                   | 용도           | 비고 |
 |-----------------------|--------------|--------|
 | cmd + e               | 최근 열었던 파일 목록 ||
 | cmd + shift + e       | 최근 수정한 파일 목록 ||
@@ -106,7 +106,7 @@ Things you may want to cover:
 
 
 ### useful ShortCuts by Refactor
-| 명령어                  | 용도           | 몰라요오오~ |
+| 명령어                  | 용도           | 비고 |
 |----------------------|--------------|--------|
 | Command + D          | 줄 복사         ||
 | shift + F6           | 파일이름 변경      ||
