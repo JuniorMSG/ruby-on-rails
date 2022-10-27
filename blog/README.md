@@ -92,22 +92,23 @@ Things you may want to cover:
 
 
 ### Finder
-| 명령어                   | 용도           | 비고 |
-|-----------------------|--------------|--------|
-| cmd + e               | 최근 열었던 파일 목록 ||
-| cmd + shift + e       | 최근 수정한 파일 목록 ||
+| 명령어                   | 용도            | 비고 |
+|-----------------------|---------------|--------|
+| cmd + e               | 최근 열었던 파일 목록  ||
+| cmd + shift + e       | 최근 수정한 파일 목록  ||
 | cmd + control + g     | 일치하는 단어 전체 선택 | ⭐️ |
-| F2                    | 오류난 곳으로 이동   ||
-| cmd + F               | 현재 파일에서 검색   ||
-| cmd + Shift + F       | 전체 파일에서 검색   ||
-| cmd + R               | 현재 파일에서 변경   ||
-| cmd + Shift + R       | 전체 파일에서 변경   ||
+| F2                    | 오류난 곳으로 이동    ||
+| cmd + F               | 현재 파일에서 검색    ||
+| cmd + Shift + F       | 전체 파일에서 검색    ||
+| cmd + R               | 현재 파일에서 변경    ||
+| cmd + Shift + R       | 전체 파일에서 변경    ||
 | opt + opt + 방향키       | 멀티 포커스 (세로모드) | ⭐️ |
-| Cmd + [, ]            | 이전 작업으로 이동   ||
-| Cmd + Shift [, ]      | 열린창 이동       ||
-| Shift + Shift         | 전체 검색        ||
-| Option + F1 + Project | 현재 소스 위치 추적  ||
-
+| Cmd + [, ]            | 이전 작업으로 이동    ||
+| Cmd + Shift [, ]      | 열린창 이동        ||
+| Shift + Shift         | 전체 검색         ||
+| Option + F1 + Project | 현재 소스 위치 추적   ||
+| shift + shift         | 전체 검색         |/views/contents/| 
+| cmd + shift + O       | 파일 검색         |/views/contents/| 
 
 ### Refactor
 | 명령어                  | 용도           | 비고 |
@@ -125,3 +126,6 @@ Things you may want to cover:
 
 ## Book
 http://www.yes24.com/Product/Goods/15254976
+
+
+## 
