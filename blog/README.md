@@ -128,4 +128,14 @@ Things you may want to cover:
 http://www.yes24.com/Product/Goods/15254976
 
 
-## 
+## Docker 명령어
+
+| 명령어                                              | 용도                            | 비고 |
+|--------------------------------------------------|-------------------------------|--------|
+| docker compose --env-file ./docker/.env.dev up   | docker compose 실행             | ⭐️ |
+| docker compose --env-file ./docker/.env.dev down | docker compose 종료 -d 백그라운드 옵션 | ⭐️ |
+| docker ps -a                                     | 실행확인                          ||
+| docker logs --tail 10 -f e97213de9b7b            | 특정 Docker 로그보기                ||
+
+
+
