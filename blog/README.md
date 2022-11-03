@@ -74,21 +74,23 @@ Things you may want to cover:
 
 ## JetBrains ShortCuts 
 ### Create
-| 명령어                 | 용도          | 비고 |
-|---------------------|-------------|--------|
-| cmd + n             | 파일 생성       ||
-| option + 방향키(좌, 우)  | 단어 단위 이동    ||      
-| option + 방향키(위, 아래) | 포커스 확장 및 축소 ||
+| 명령어                 | 용도               | 비고  |
+|---------------------|------------------|-----|
+| cmd + n             | 파일 생성            ||
+| option + 방향키(좌, 우)  | 단어 단위 이동         ||      
+| option + 방향키(위, 아래) | 포커스 확장 및 축소      ||
+| cmd + shift + L     | 데이터콘솔에서 콘솔창 추가하기 ||
+| opt + cmd + L       | 코드정렬             | ⭐   |
 
 
 ### Focus    
-| 명령어                 | 용도          | 비고 |
-|---------------------|-------------|--------|
-| Ctrl + 1~9           | 마우스 안쓰고 싶을때..  |  ⭐️ |
-| Opt + F12 | ruby mine console | ⭐️ |
-| cmd + 방향키           | 라인 단위 이동    ||
-| option + 방향키(좌, 우)  | 단어 단위 이동    ||
-| option + 방향키(위, 아래) | 포커스 확장 및 축소 ||
+| 명령어                 | 용도          | 비고  |
+|---------------------|-------------|-----|
+| Ctrl + 1~9           | 마우스 안쓰고 싶을때..  | ⭐️  |
+| Opt + F12 | ruby mine console | ⭐️  |
+| cmd + 방향키           | 라인 단위 이동    |     | 
+| option + 방향키(좌, 우)  | 단어 단위 이동    |     |
+| option + 방향키(위, 아래) | 포커스 확장 및 축소 |     |
 
 
 ### Finder
@@ -137,6 +139,8 @@ http://www.yes24.com/Product/Goods/15254976
 | docker compose --env-file ./docker/.env.dev down | docker compose 종료 -d 백그라운드 옵션 | ⭐️ |
 | docker ps -a                                     | 실행확인                          ||
 | docker logs --tail 10 -f e97213de9b7b            | 특정 Docker 로그보기                ||
+
+
 
 
 
