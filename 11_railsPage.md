@@ -20,10 +20,12 @@
 
 
 
+
 ## routes.rb
     # 주소로 처음 들어가면 HomeController 에서 index 엑션에 연결해주세요
     root 'home#index'
     get '/' => 'home#index'
+    resource 등
 ![image](https://user-images.githubusercontent.com/22822369/186712294-89592117-051d-4f0e-9da7-0e364e4c387d.png)  
 ![image](https://user-images.githubusercontent.com/22822369/186714624-a9c35f07-4da4-484d-ad00-449fcbaa944c.png)  
 ### Controller 생성
