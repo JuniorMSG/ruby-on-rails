@@ -78,3 +78,5 @@ while_test
 
 
 # 2.6 정규 표현식
+# puts.* puts.* 싹 제거 가능
+# 
