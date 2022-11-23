@@ -45,3 +45,36 @@ inst_section = {
 }
 
 puts ":::: #{inst_section}"
+
+# Page 28 ~ if while
+radiation = 1000
+puts "Danger !" if radiation > 3000
+
+radiation = 4000
+puts "Danger !" if radiation > 3000
+
+data = 1 unless false
+puts "data :::: #{data}"
+
+def unless_test(flag)
+  "999" unless flag
+end
+
+puts ":::: #{unless_test(flag=false)}"
+puts ":::: #{unless_test(flag=true)}"
+
+def while_test
+  square = 4
+  square = square*square while square < 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+  puts square
+  n = 0
+  while n<100
+    puts 2 ** n
+    n += 1
+  end
+end
+
+while_test
+
+
+# 2.6 정규 표현식
