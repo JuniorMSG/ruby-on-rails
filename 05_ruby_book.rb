@@ -79,4 +79,18 @@ while_test
 
 # 2.6 정규 표현식
 # puts.* puts.* 싹 제거 가능
-# 
+
+
+
+# 2.7 블록 , 반복자
+
+# { puts "Hello" }
+
+def call_block
+  puts "Start of method"
+  yield
+  yield
+  puts "End of method"
+end
+
+call_block { puts " In the block"}
