@@ -38,9 +38,9 @@ class Account
   end
 
   def greater_balance_than?(other)
-    puts "??? #{other.cleared_balance}"
-
+    @cleared_balance > other.cleared_balance
   end
+
 end
 
 class Transaction
@@ -62,7 +62,6 @@ class Transaction
 end
 
 saving = Account.new(100)
-puts "checking.balance : #{saving.cleared_balance}"
 checking = Account.new(200)
 
 trans = Transaction.new(saving, checking)
@@ -71,4 +70,24 @@ trans.transfer(50)
 puts "saving.balance :#{saving.balance}"
 puts "checking.balance : #{checking.balance}"
 
-saving.greater_balance_than?(checking)
+class Person
+  def initialize
+    @age = rand(50)
+  end
+
+  def >(other_person)
+    puts "my age ::: #{@age} "
+    puts "::: #{other_person.age}"
+    @age > other_person.age
+  end
+
+  protected
+  def age
+    @age
+  end
+end
+
+me = Person.new
+you = Person.new
+puts "#{me > you}"
+
