@@ -79,7 +79,7 @@ while_test
 
 # 2.6 정규 표현식
 # puts.* puts.* 싹 제거 가능
-
+# 틈날때 작성하자
 
 
 # 2.7 블록 , 반복자
@@ -94,3 +94,6 @@ def call_block
 end
 
 call_block { puts " In the block"}
+
+
+# 2.8.
