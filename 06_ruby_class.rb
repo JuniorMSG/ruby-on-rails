@@ -91,3 +91,33 @@ me = Person.new
 you = Person.new
 puts "#{me > you}"
 
+
+
+class VoHash
+  attr_reader :price
+  attr_accessor :price
+
+  def initialize
+    # @price = 0
+  end
+
+end
+
+me = VoHash.new
+puts ":::: me.price :: #{me.price}"
+me.price = 1
+puts ":::: me.price :: #{me.price}"
+
+
+# 변수는 객체
+
+people1 = "Tim"
+people3 = people1
+people2 = people1.dup
+
+people1[0] = "J"
+people1[1] = "K"
+puts "people1 :: #{people1} people2 :: #{people2} people3 ::: #{people3}"
+
+people1 = "Kass"
+puts "people1 :: #{people1} people2 :: #{people2} people3 ::: #{people3}"
