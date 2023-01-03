@@ -15,3 +15,6 @@ Ruby On Rails Study Repo
 
 ## MAC M1에 생으로 셋팅하기
     흠! 정리해보자...
+
+
+
