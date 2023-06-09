@@ -94,4 +94,4 @@ puts result
 
 puts "============"
 enum_in_threes = (1..10).enum_for(:each_slice, 3)
-enum_in_threes.to_a 
+enum_in_threes.to_a
